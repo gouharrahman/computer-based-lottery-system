@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer_based_lottery_system</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+
+<body>
+  <script>
+    function changePrice(priceId,quantityId){
+      
+        const price=document.getElementById(priceId)
+        const quantity=document.getElementById(quantityId)
+        price.value=(price.defaultValue*quantity.value).toFixed(2);
+    }
+  
+    </script>
+    
+    <div class="main" style="height:1300px">
+            <div class="nav">
+                <div class="logo">
+                <a href="main.html">Lucky Draw</a>
+                </div>
+
+            <div class="menu">
+                <ul style="margin-left:350px">
+                    <li><a href="main.html">HOME</a></li>
+                    <li><a href="service.html">SERVICES</a></li>
+                    <li><a href="winUser.php">WINNER</a></li>
+                    <div class="content" style="top:15px; margin-left:25px;">
+                <button class="cn"><a href="index.php">LOGOUT HERE</a></button>
+                </div>
+                </ul>
+            </div>
+        </div> 
+
+        <section class="packages" id="city">
+
+        <h1 class="heading" style="background:grey;">
+            <span>L</span>
+            <span>O</span>
+            <span>T</span>
+            <span>T</span>
+            <span>E</span>
+            <span>R</span>
+            <span>I</span>
+            <span>E</span>
+            <span>S</span>
+        </h1>
+
+        <div class="box-container" >
+
+            <div class="box">
+              <form method="get" action="./payment.php">
+                <div style="width:1000px; margin-left: -70px;">
+                <img src="images/11.PNG" alt="">
+              </div>
+                <div class="content">
+                    <h3>  CONTEST 1 (QUARTER) </h3>
+                    <p>To participate and win the contest buy ticket as much is u can.</p>
+                      </div>
+                      <input name="price" default="5" id="price1" value="5" style="font-size: 30px;color: blue;margin-left: 10px;">$<span style="font-size:25px; color: black;">Per Ticket</span></input>
+                    <div style="margin-left:30px; margin-top:20px">
+                      <tr style="width: 40px;height: 30px ; padding: 5px;">
+                      <td>Quantity: <input name="quantity"  id="quantity1" type="number" min="1"  max="5" value="1" onchange="changePrice('price1','quantity1');"></td>
+                      </tr>
+                    </div>
+                <div class="content">
+                  <button type="submit" class="cn" style="margin-left:420px">BUY TICKETS</button>
+                </div>
+        </form>
+
+            </div>
+
+            <div class="box">
+              <form method="get" action="./payment1.php">
+                <div style="width:1000px; margin-left: -70px;">
+                <img src="images/22.PNG" alt="">
+              </div>
+                <div class="content">
+                    <h3>  CONTEST 1 (HALF)</h3>
+                    <p>To participate and win the contest buy ticket as much is u can.</p>
+                      </div>
+                      <input name="price" default="10" id="price2" value="10" style="font-size: 30px;color: blue;margin-left: 10px;">$<span style="font-size:25px; color: black;">Per Ticket</span></input>
+                    <div style="margin-left:30px; margin-top:20px">
+                      <tr style="width: 40px;height: 30px ; padding: 5px;">
+                      <td>Quantity: <input name="quantity"  id="quantity2" type="number" value="1" min="1"  max="5" onchange="changePrice('price2','quantity2');"></td>
+                      </tr>
+                    </div>
+                <div class="content">
+                  <button type="submit" class="cn" style="margin-left:420px">BUY TICKETS</button>
+                </div>
+        </form>
+            </div>
+          </div>
+          <div class="box-container" style="width:640px; margin-left:350px" >
+            <div  class="box" >
+              <form method="get" action="./payment2.php" >
+                <div style="width:1000px; margin-left: -70px;">
+                <img src="images/33.PNG" alt="">
+              </div>
+                <div class="content">
+                    <h3>  CONTEST 3 (FULL)</h3>
+                    <p>To participate and win the contest buy ticket as much is u can.</p>
+                      </div>
+                      <input name="price" value="20" default="20" id="price3" style="font-size: 30px;color: blue;margin-left: 10px;">$<span style="font-size:25px; color: black;">Per Ticket</span></input>
+                    <div style="margin-left:30px; margin-top:20px">
+                      <tr style="width: 10px;height: 30px ; padding: 5px;">
+                      <td>Quantity: <input name="quantity" type="number" min="1"  max="5" id="quantity3" value="1" onchange="changePrice('price3','quantity3');"></td>
+                      </tr>
+                    </div>
+                <div class="content">
+                  <button type="submit" class="cn" style="margin-left:420px">BUY TICKETS</button>
+                </div>
+              </form>
+            </div>
+
+        </div>
+
+    </section>
+</div>
+
+</body>
